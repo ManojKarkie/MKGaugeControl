@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MkGaugeControl'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MkGaugeControl.'
+  s.summary          = 'Gauge UI Libray for iOS apps'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

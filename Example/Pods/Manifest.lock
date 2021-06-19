@@ -1,0 +1,16 @@
+PODS:
+  - MkGaugeControl (0.1.0)
+
+DEPENDENCIES:
+  - MkGaugeControl (from `../`)
+
+EXTERNAL SOURCES:
+  MkGaugeControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MkGaugeControl: 00dd7e9e5e77f2a2e2bb73f65db1ca9ad0afcff9
+
+PODFILE CHECKSUM: 2c4a59247abfebb86b70b477329a7d015a28a712
+
+COCOAPODS: 1.10.1
