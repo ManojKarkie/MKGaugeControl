@@ -13,9 +13,10 @@
 		8B74B15BCAEF5B1BBD45B1E713294D29 /* Pods-MkGaugeControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8B9FF494B6B977C4B1D9D66AB97B5 /* Pods-MkGaugeControl_Tests-dummy.m */; };
 		9A6851064BCD4EAA1284B74F8FCD5E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A7B6157254D89881FB0D920DE50D8563 /* Pods-MkGaugeControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E766586194E35D7E64388607ADFB10 /* Pods-MkGaugeControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFE408C5267E4F9C004F1831 /* MKGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE408C3267E4F9C004F1831 /* MKGaugeView.swift */; };
+		AFE408C6267E4F9C004F1831 /* Needle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE408C4267E4F9C004F1831 /* Needle.swift */; };
 		BC645462C87C080DE5489BEAAA7A734D /* MkGaugeControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F4E0A7FB99A073F1394501D2439CC1 /* MkGaugeControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA35D61C9A80DC4184892AA047FE2A78 /* Pods-MkGaugeControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8AD61A3CDB35EA8A88684DB53EF2C6 /* Pods-MkGaugeControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E44196904EC74DCC3D6FBC7A422F324E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66BE613210CCB8F97E6C909B445032B /* ReplaceMe.swift */; };
 		F28CE2DDBC53FC85A99CE7B2429C45A0 /* Pods-MkGaugeControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3617B152971C6571E9651D4D4DA576E2 /* Pods-MkGaugeControl_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +59,10 @@
 		9BD5FA323BB26EF374AAB8F22EA18C9A /* MkGaugeControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MkGaugeControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAA96261DF242BD68DCDAC0AF2B18189 /* MkGaugeControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MkGaugeControl-Info.plist"; sourceTree = "<group>"; };
+		AFE408C3267E4F9C004F1831 /* MKGaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGaugeView.swift; sourceTree = "<group>"; };
+		AFE408C4267E4F9C004F1831 /* Needle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needle.swift; sourceTree = "<group>"; };
 		B90290C0681A8CEE7697F851FB3E998A /* MkGaugeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MkGaugeControl.debug.xcconfig; sourceTree = "<group>"; };
 		C603007EC700C5256434875A726E2599 /* Pods-MkGaugeControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MkGaugeControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C66BE613210CCB8F97E6C909B445032B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MkGaugeControl/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		CA6DF35E174CDB1A02477873B6CA60E9 /* Pods-MkGaugeControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MkGaugeControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC2552E6DC7AEECEBC17AFAC7A2E907D /* Pods-MkGaugeControl_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MkGaugeControl_Tests-Info.plist"; sourceTree = "<group>"; };
 		D065F043C9B0400CE6D9E612E4046248 /* Pods-MkGaugeControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MkGaugeControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -144,7 +146,8 @@
 		4F5E2C79BFA2CA3669F6CC3C92C8DF88 /* MkGaugeControl */ = {
 			isa = PBXGroup;
 			children = (
-				C66BE613210CCB8F97E6C909B445032B /* ReplaceMe.swift */,
+				AFE408C3267E4F9C004F1831 /* MKGaugeView.swift */,
+				AFE408C4267E4F9C004F1831 /* Needle.swift */,
 				B80DC3FCC3124F07D17A71E21AF2473B /* Pod */,
 				C57874BE5948CEC48C54F848B65C0CB6 /* Support Files */,
 			);
@@ -317,6 +320,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					302B88153F37C83DE6D3165A371B2973 = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,8 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE408C5267E4F9C004F1831 /* MKGaugeView.swift in Sources */,
+				AFE408C6267E4F9C004F1831 /* Needle.swift in Sources */,
 				34A8E062463FC14B66FE93B035028960 /* MkGaugeControl-dummy.m in Sources */,
-				E44196904EC74DCC3D6FBC7A422F324E /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B90290C0681A8CEE7697F851FB3E998A /* MkGaugeControl.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -529,7 +539,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -574,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95CE494F6CF9A481F14213C4E469F069 /* MkGaugeControl.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -594,7 +606,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

@@ -7,17 +7,32 @@
 //
 
 import UIKit
+import MkGaugeControl
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var gaugeView: MKGaugeView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        gaugeView.layer.borderWidth = 1.0
+//        gaugeView.layer.borderColor = UIColor.orange.cgColor
+    }
+
+    @IBAction func animte(_ sender: Any) {
+        gaugeView.maxGaugeLimit = 100000
+        gaugeView.needleValue = 75000
+        gaugeView.animateNeedle()
     }
 
 }
