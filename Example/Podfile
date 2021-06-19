@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MkGaugeControl_Example' do
+  pod 'MkGaugeControl', :path => '../'
+
+  target 'MkGaugeControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
