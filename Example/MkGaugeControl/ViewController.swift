@@ -21,17 +21,18 @@ class ViewController: UIViewController {
         } else {
             // Fallback on earlier versions
         }
+    
+        gaugeView.leftGradientColor = UIColor.blue
+        gaugeView.rightGradientColor = UIColor.red
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        gaugeView.layer.borderWidth = 1.0
-//        gaugeView.layer.borderColor = UIColor.orange.cgColor
     }
 
     @IBAction func animte(_ sender: Any) {
-        gaugeView.maxGaugeLimit = 100000
-        gaugeView.needleValue = 75000
+        gaugeView.maxGaugeLimit = 1000
+        gaugeView.needleValue = 750
         gaugeView.animateNeedle()
     }
 

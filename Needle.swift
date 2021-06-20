@@ -7,9 +7,11 @@
 
 import UIKit
 
+//MARK:- NeedView
 public final class Needle: UIView {
 
-    public var fillColor = UIColor(red: 14.0/255.0, green:  14.0/255.0, blue: 15.0/255.0, alpha: 1.0)
+    // MAKR:- API
+    var fillColor = UIColor(red: 14.0/255.0, green:  14.0/255.0, blue: 15.0/255.0, alpha: 1.0)
 
     var needleShapeLayer: CAShapeLayer?
     let animationKey = "needleHikeAnimation"
@@ -21,10 +23,9 @@ public final class Needle: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .clear
-        self.setupLayer()
     }
 
-    private func setupLayer() {
+    func setupLayer() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.frame = self.bounds
         let needlePath = UIBezierPath()
@@ -44,11 +45,12 @@ public final class Needle: UIView {
         shapeLayer.fillColor = fillColor.cgColor
         self.layer.addSublayer(shapeLayer)
         self.needleShapeLayer = shapeLayer
-        
     }
 }
 
+// Setup Anchor
 extension Needle {
+
     func setAnchorPoint(_ point: CGPoint) {
         var newPoint = CGPoint(x: bounds.size.width * point.x, y: bounds.size.height * point.y)
         var oldPoint = CGPoint(x: bounds.size.width * layer.anchorPoint.x, y: bounds.size.height * layer.anchorPoint.y);
@@ -67,5 +69,6 @@ extension Needle {
         self.needleShapeLayer?.position = position ?? .zero
         self.needleShapeLayer?.anchorPoint = point
     }
+
 }
 
