@@ -22,7 +22,7 @@ pod 'MkGaugeControl'
 
 ## Author
 
-manojkarkie@gmail.com, manojkarkie@gmail.com
+manojkarkie@gmail.com
 
 ## License
 
