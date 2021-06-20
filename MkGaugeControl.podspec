@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MkGaugeControl'
-  s.version          = '0.3'
+  s.version          = '0.4'
   s.summary          = 'Gauge UI Library for iOS apps, UIKit, Swift 5'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '12.1'
   s.swift_versions = "5"
 
-  s.source_files = 'MkGaugeControl/Classes/**/*'
+  s.source_files = 'Classes/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'MkGaugeControl' => ['MkGaugeControl/Assets/*.png']
