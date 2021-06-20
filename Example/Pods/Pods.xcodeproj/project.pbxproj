@@ -146,8 +146,7 @@
 		4F5E2C79BFA2CA3669F6CC3C92C8DF88 /* MkGaugeControl */ = {
 			isa = PBXGroup;
 			children = (
-				AFE408C3267E4F9C004F1831 /* MKGaugeView.swift */,
-				AFE408C4267E4F9C004F1831 /* Needle.swift */,
+				AFE408C7267ECF8A004F1831 /* Classes */,
 				B80DC3FCC3124F07D17A71E21AF2473B /* Pod */,
 				C57874BE5948CEC48C54F848B65C0CB6 /* Support Files */,
 			);
@@ -180,6 +179,15 @@
 				4BB0124EB5872DD23C41DA1F08EC73DD /* Pods-MkGaugeControl_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AFE408C7267ECF8A004F1831 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AFE408C3267E4F9C004F1831 /* MKGaugeView.swift */,
+				AFE408C4267E4F9C004F1831 /* Needle.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		B80DC3FCC3124F07D17A71E21AF2473B /* Pod */ = {
